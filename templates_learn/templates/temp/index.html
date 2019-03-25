@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends "temp/base.html"%}
+{% block body_block%}
+<h1>Welcome To Index</h1>
+
+<h2>Example Of Templates Inheritance</h2>
+
+
+{% endblock%}
+
+{% block contant %}
+<p>Hello this is amazing</p>
+
+<!-- | template filters -->
+{{k1|upper}}
+{{K2|cut:'I'}}
+{{K3|add:'87'}}
+
+{% endblock %}
